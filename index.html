@@ -1,60 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>W3-F3-Project</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="project.css">
-</head>
-<body>
-    <section class="">
-        <div>
-            <p class="m-0">Welcome Back</p>
-            <h3>Sign up to your account</h3>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <section id="main-section" class="d-flex flex-column justify-content-center align-items-center">
+      <div
+        class="d-flex flex-column p-5"
+        id="main-div"
+      >
+        <div class="align-self-start">
+          <p class="m-0">Welcome back! 👋</p>
+          <h3>Sign up to your account</h3>
         </div>
-        <div class="container mt-5">
-            <form id="myForm" novalidate>
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                    <div class="invalid-feedback">
-                        Please enter your name.
-                    </div>
-                </div>
-        
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                    <div class="invalid-feedback">
-                        Please enter a valid email address.
-                    </div>
-                </div>
-        
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" class="form-control" id="password" name="password" required>
-                    <div class="invalid-feedback">
-                        Please enter your password.
-                    </div>
-                </div>
-        
-                <div class="form-group">
-                    <label for="confirmPassword">Confirm Password:</label>
-                    <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
-                    <div class="invalid-feedback">
-                        Please confirm your password.
-                    </div>
-                </div>
-        
-                <button type="button" class="btn btn-primary" onclick="validateForm()">Continue</button>
-                <div id="error-message" class="text-danger mt-2"></div>
-                 <div class="invalid-feedback">
-                        Please enter your password.
-                    </div>
+        <div class="mt-5" id="form-div">
+          <form id="myForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+              <div class="invalid-feedback text-primary">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="invalid-feedback text-primary">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="invalid-feedback text-primary">Please enter your password.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+              <div class="invalid-feedback text-primary">Please confirm your password.</div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-primary mt-3 w-100"
+              onclick="validateForm()"
+            >
+              Continue
+            </button>
+            <div id="error-message" class="text-primary mt-2"></div>
+            <div class="invalid-feedback">Please enter your password.</div>
+          </form>
+        </div>
+    </div>
+    <div class="mt-4">
+        Don't have an account? <span class="text-primary">Sign up</span>
+    </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="project.js"></script>
-</body>
+  </body>
 </html>
