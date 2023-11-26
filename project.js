@@ -20,7 +20,7 @@ function validateForm() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     pushToLocal(name,email,password);
-    window.location.href = "http://127.0.0.1:5500/profile.html";
+    window.location.href = "profile.html";
   }
   form.classList.add("was-validated");
 }
